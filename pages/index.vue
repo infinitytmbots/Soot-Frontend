@@ -16,15 +16,18 @@
       <div id="background" class="grid place-items-center bg-white-primary w-full">
         <div class="grid place-items-center w-1/3 h-2/3 ">
           <img id="" src="" alt="">
-          <h1 class="font-montserrat font-bold text-5xl">Hello Again!</h1>
+          <h1 class="font-montserrat font-bold text-5xl">Hello There!</h1>
           <!-- TODO FONT CHANGE -->
-          <form class="w-full">
-            <label for="fname" class="text-grey-5 pb-1 font-medium font-montserrat">Username</label><br>
-            <input class="w-full h-12 rounded-lg" type="text" id="fname" name="fname"><br>
-            <label class="text-grey-5 pb-1 font-medium font-montserrat" for="lname">Password</label><br>
-            <input class="w-full h-12 rounded-lg" type="password" id="password">
-          </form>
-          <button class="bg-blue-primary w-full h-12 rounded-lg">Login</button>
+          <div class="w-full font-montserrat">
+            <form>
+              <label for="fname" class="text-grey-5 pb-1 font-medium">Username</label><br>
+              <input class="w-full h-12 rounded-lg p-5" type="text" id="fname" name="fname"><br>
+              <label class="text-grey-5 pb-1 font-medium font-montserrat" for="lname">Password</label><br>
+              <input class="w-full h-12 rounded-lg p-5" type="password" id="password">
+            </form>
+            <br><br>
+            <button class="bg-blue-primary w-full text-semibold text-white-primary h-12 rounded-lg">Login</button>
+          </div>
         </div>
       </div>
     </div>
@@ -32,6 +35,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'Login'
 }
