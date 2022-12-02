@@ -7,6 +7,12 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         "grifter": ["Grifter", "sans-serif"],
       },
+      backgroundImage: {
+        "loginBack": "url('/img/loginFlow.png')",
+      },
+      backgroundPosition: {
+        0: "0",
+      },
       colors: {
         "blue": {
           "primary": "#3F87F3",
