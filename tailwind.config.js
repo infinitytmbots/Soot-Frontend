@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         "blue": {
-          "primary": "#3F87F3"
+          "primary": "#3F87F3",
         },
         "white": {
           "primary": "#EEF2F3",
