@@ -6,8 +6,8 @@
       min-h-screen
       font-quicksand
       tracking-wide
-      bg-discortics-100
-      text-white
+      bg-white-secondary
+      text-black-primary
     "
   >
     <div
@@ -21,13 +21,8 @@
         ref="mobilemenu"
         :title="route.path.split('/').reverse()[0]"
       />
-      <LayoutTopbar
-        ref="desktopmenu"
-        :title="route.path.split('/').reverse()[0]"
-      />
       <main class="flex-1 w-full p-2 mx-auto lg:pl-2 pr-4 mt-5 lg:mt-0 lg:max-h-screen overflow-y-auto">
         <div id="content" class="p-2 flex flex-col justify-start">
-          <LayoutTopstuff ref="topbar" />
           <div
             class="
               lg:ml-5
@@ -50,13 +45,5 @@
   </div>
 </template>
 <script setup>
-import Navigation from "@/data/DashNav";
 const route = useRoute()
-const topbar = ref(null)
-const desktopmenu = ref(null)
-function toggleChild() {
-      topbar.toggleOff ?? topbar.toggleOff();
-      desktopmenu.toggleOff ??
-        desktopmenu.toggleOff();
-};
 </script>

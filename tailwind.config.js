@@ -14,6 +14,10 @@ export default {
         "white": {
           "primary": "#EEF2F3",
           "secondary": "#D5D9DD",
+        },
+        "black": {
+          "primary": "#282828",
+          "secondary": "#999999",
         }
       },
     },
