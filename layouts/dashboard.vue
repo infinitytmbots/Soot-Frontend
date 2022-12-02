@@ -32,7 +32,7 @@
           </div>
         </div>
       </main>
-      <AtaGlance/>
+      <LayoutDashBar/>
     </div>
   </div>
 </template>
