@@ -49,8 +49,6 @@ async function useLogin() {
   const r = useRouter();
   console.log("LOGGING IN");
   loading = true;
-  return;
-
   const res = await fetch(
     "http://localhost:3001/signin",
     {
