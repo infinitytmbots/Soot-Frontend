@@ -1,11 +1,9 @@
 <template>
-  <div>    
-    <VueApexCharts :options="chartOptions" />
-  </div>
+  <VueApexCharts :options="chartOptions" />
 </template>
-
 
 <script setup>
 import VueApexCharts from 'vue3-apexcharts'
+
 const chartOptions = {}
 </script>

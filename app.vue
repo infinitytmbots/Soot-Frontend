@@ -5,6 +5,7 @@
     </NuxtLayout>
   </div>
 </template>
+
 <script setup lang="ts">
 /*useSchemaOrg([
   defineWebSite({
