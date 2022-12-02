@@ -35,7 +35,8 @@
 </template>
 
 <script>
-
+const r = useRouter();
+// r.push("/home");
 export default {
   name: 'Login'
 }
