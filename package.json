@@ -1,0 +1,22 @@
+{
+  "name": "Soot-Frontend",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "nuxt": "3.0.0",
+    "@nuxt/content": "^2.2.0",
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "@vueuse/core": "^9.6.0",
+    "nuxt-schema-org": "^0.6.5"
+  },
+  "devDependencies": {
+    "aos": "^2.3.4"
+  }
+}
