@@ -1,11 +1,9 @@
 <template>
-  <div class="p-4 h-screen font-montserrat z-50">
+  <div class="mx-4 h-screen font-montserrat z-50">
     <div :class="`
         z-40 h-full
         rounded-xl
-        hidden lg:block lg:max-h-[95vh]
         flex-none flex
-        lg:left-0
         items-center
         overflow-hidden
         transform
@@ -15,13 +13,10 @@
         duration-500
         ease-in-out
         w-24
-        top-0           
         bg-transparent
       `">
       <div class="
           block
-          top-0
-          left-0
           sticky
           flex-1
           p-4
@@ -30,15 +25,16 @@
           duration-500
           ease-in-out
           overflow-hidden
+          h-full
         ">
-        <div :class="`flex lg:space-y-1 flex-col items-center lg:pt-0 pt-10 mt-10`">
+        <div :class="`flex lg:space-y-1 flex-col items-center justify-between h-full`">
           <div
             :class="`flex flex-col mx-auto justify-start items-center w-full transition-all
         duration-500
-        ease-in-out`"
+        ease-in-out mt-8`"
           >
-            <SVGLogo
-              class="h-12 w-auto"
+            <SVGLogoBlack
+              class="w-auto"
             />
           </div>
           <div
@@ -66,12 +62,11 @@
         duration-500
         ease-in-out
               `">
-              <span class="py-1 text-white/50 text-xxs font-medium">{{ heading }}</span>
             </p>
             <div
               v-for="{ name, route, key, routeIcon } in routes"
               :key="key"
-              :class="`w-full py-1 flex flex-row items-center justify-center justify-start`"
+              :class="`w-full py-2 flex flex-row items-center justify-center justify-start`"
             >
               <!-- <div :class="`${
                   title === key ? 'block' : 'hidden'
@@ -99,11 +94,17 @@
               ><span>
                   <SVGWrapper
                     :name="routeIcon"
-                    size="36"
+                    size="34"
                   />
                 </span>
               </NuxtLink>
             </div>
+          </div>
+          <div class="mb-4">
+            <img
+              class="w-auto"
+              src="/img/user.png"
+            />
           </div>
         </div>
       </div>

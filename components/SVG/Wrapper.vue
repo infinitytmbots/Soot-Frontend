@@ -1,6 +1,8 @@
 <template>
   <div :class="classe">
     <SVGHome v-if="name.toLowerCase() == 'home'" :size="size" />
+    <SVGGallery v-if="name.toLowerCase() == 'gallery'" :size="size" />
+    <SVGUser v-if="name.toLowerCase() == 'user'" :size="size" />
     <SVGSettings v-if="name.toLowerCase() == 'settings'" :size="size" />
   </div>
 </template>
