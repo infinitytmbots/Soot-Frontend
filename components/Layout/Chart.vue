@@ -7,6 +7,8 @@
 
 <script setup>
 import VueApexCharts from 'vue3-apexcharts'
+import series from "@/data/ChartData.js";
+
 const chartOptions = {
             chart: {
               type: 'area',
@@ -53,8 +55,4 @@ const chartOptions = {
               },
             },
           };
-const series = [{
-            name: 'series1',
-            data: [31, 40, 28, 51, 42, 109, 100]
-          }];
 </script>

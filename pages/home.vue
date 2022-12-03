@@ -15,17 +15,18 @@
             </div>
         </div>
         <div class="w-3/6 h-72 bg-black-secondary-2 rounded-lg">
-            <p class="pt-7 pl-6 font-montserrat font-semibold text-xl text-white-secondary">Performance</p>
+            <p class="pt-4 pl-6 font-montserrat font-semibold text-xl text-white-secondary">Performance</p>
             <div class="grid pt-4 grid-cols-2">
                 <div class="mx-5 mt-2">
                     <p class="text-4xl text-white-primary pl-6 font-grifter leading-9">{{ data.engine.life }}%</p>
-                    <p class="text-xs text-white-primary/60 pl-6 font-montserrat">Credits</p>
+                    <p class="text-xs text-white-primary/60 pl-6 font-montserrat">Engine Life</p>
                 </div>
                 <div class="mx-5 mt-2">
                     <p class="text-4xl text-white-primary pl-6 font-grifter leading-9">{{ data.engine.humidity }}%</p>
-                    <p class="text-xs text-white-primary/60 pl-6 font-montserrat">Emission</p>
+                    <p class="text-xs text-white-primary/60 pl-6 font-montserrat">Humidity</p>
                 </div>
             </div>
+            <p class="pt-3 pl-6 font-montserrat font-semibold text-base text-white-secondary">Badges</p>
             <img src="/img/badges.png" alt="">
         </div>
     </div>
@@ -36,14 +37,19 @@
 </div>
 </template>
 <script setup>
+import series from "@/data/ChartData.js";
+const sum = $ref(0);
+for(let i in series[0].data){
+    sum += series[0].data[i];
+}
 const data = $ref({
     carbon: {
-        credit: 56,
-        emission: 233
+        credit: 500 - sum ,
+        emission: sum
     },
     engine: {
-        life: 96,
-        humidity: 51
+        life: "--",
+        humidity: "--"
     }
 });
     definePageMeta({
