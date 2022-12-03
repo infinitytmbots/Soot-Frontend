@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4 h-screen font-montserrat z-50">
+  <div class="px-4 h-screen font-montserrat z-50 border-r-2 border-black-secondary/50">
     <div :class="`
         z-40 h-full
         rounded-xl
