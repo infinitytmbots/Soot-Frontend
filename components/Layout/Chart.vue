@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VueApexCharts height="320" width="910" :options="chartOptions" :series="series" />
+    <VueApexCharts :options="chartOptions" :series="series" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ const chartOptions = {
             chart: {
               type: 'area',
               toolbar: {
-                show: false
+                show: true
               }
             },
             dataLabels: {
@@ -23,7 +23,7 @@ const chartOptions = {
               curve: 'smooth'
             },
             fill: {
-              colors: ['#FFFFFFFF', '#FFFFFFCC', '#FFFFFF00']
+              colors: ['#FFFFFFFF', '#FFFFFFCC', '#FFFFFFFF']
             },
             xaxis: {
               type: 'datetime',
@@ -45,7 +45,7 @@ const chartOptions = {
               },
               yaxis: {
                 lines: {
-                  show: false,
+                  show: true,
                 },
               },
             },

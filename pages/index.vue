@@ -39,7 +39,6 @@
 
 <script setup>
 
-const r = useRouter();
 const username = $ref("");
 const password = $ref("");
 const loading = $ref(false);
@@ -49,7 +48,7 @@ async function useLogin() {
   if(!username || !password) return;
   const r = useRouter();
   console.log("LOGGING IN");
-  loading = true;
+  let loading = true;
   const res = await fetch(
     "http://localhost:3001/signin",
     {
@@ -59,7 +58,8 @@ async function useLogin() {
     },
   ).catch(() => {});
   if (!res) {
-    username = password = "";
+    let username = "";
+    let password = "";
     loading = false;
     r.push("/error");
     return;
