@@ -10,5 +10,6 @@ export default [{
             efficeny: Math.round(((205 - sum) / 205) * 100),
             humidity: "--" // This Value is sourced from the sensors
         }
-    }
+    },
+    wallet: "0xA454363F6Fbd9401eA420FF05e7856C7b2c0B186"
 }]
