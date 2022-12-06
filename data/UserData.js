@@ -1,4 +1,4 @@
-let sum = [15,10,10,15,10,10,10].reduce((partialSum, a) => partialSum + a, 0)
+let sum = [15, 10, 10, 15, 10, 10, 10].reduce((partialSum, a) => partialSum + a, 0)
 
 export default [{
     data: {
@@ -9,7 +9,7 @@ export default [{
         engine: {
             efficeny: Math.round(((205 - sum) / 205) * 100),
             humidity: "--" // This Value is sourced from the sensors
-        }
+        },
+        wallet: "0xA454363F6Fbd9401eA420FF05e7856C7b2c0B186"
     },
-    wallet: "0xA454363F6Fbd9401eA420FF05e7856C7b2c0B186"
 }]
