@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  server: {
+    port: 80, // default: 3000
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   meta: {
     title: 'Soot',
